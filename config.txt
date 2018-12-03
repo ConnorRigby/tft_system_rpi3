@@ -40,4 +40,7 @@ dtparam=i2c_arm=on
 # Enable the UART (/dev/ttyAMA0) on the RPi3.
 enable_uart=1
 dtoverlay=pi3-miniuart-bt
-dtoverlay=pitft35-resistive,rotate=${pitftrot},speed=20000000,fps=20
+# Uncomment the pitft28 line and comment/delete the pitft35
+# if you are using that screen
+# dtoverlay=pitft28-capacitive,speed=20000000,fps=20
+dtoverlay=pitft35-resistive,speed=20000000,fps=20
